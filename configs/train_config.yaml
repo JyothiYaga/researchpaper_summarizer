@@ -1,0 +1,16 @@
+model:
+  name: t5-small
+  max_input_length: 512
+  max_target_length: 64
+
+training:
+  batch_size: 8
+  epochs: 5
+  learning_rate: 3e-4
+  warmup_steps: 500
+  gradient_accumulation_steps: 2
+
+paths:
+  train_data: data/train/train.csv
+  val_data: data/val/val.csv
+  output_dir: models/

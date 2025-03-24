@@ -1,0 +1,10 @@
+# Data preprocessing configuration
+min_abstract_length: 50
+use_title_as_target: false
+max_abstract_tokens: 512
+max_summary_tokens: 64
+
+# Data splitting
+train_size: 0.8
+val_size: 0.1
+test_size: 0.1
